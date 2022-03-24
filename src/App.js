@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/*" element={<Home />} />
           <Route path="/About" element={<About />} />
         </Routes>
         <Footer/>
