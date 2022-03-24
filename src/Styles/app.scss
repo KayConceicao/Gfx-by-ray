@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.app {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.links {
+    text-decoration: none;
+
+    li {
+        color: #000;
+        font-size: 1rem;
+
+        &:hover {
+            color: #4b85a8;
+            text-decoration: underline;
+        }
+    }
+}
+
+// Layouts
+
+.halfnHalf {
+    display: flex;
+    flex-flow: column;
+
+    div {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 760px) {
+        flex-flow: row;
+
+        div {
+            width: 50%;
+        }
+    }
+}
+
+.leftthird {
+    display: flex;
+    flex-flow: column;
+
+    div {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 760px) {
+        flex-flow: row;
+
+        div:first-child {
+            width: 30%;
+        }
+        div:last-child {
+            width: 70%;
+        }
+    }
+}
+
+.rigththird {
+    display: flex;
+    flex-flow: column;
+
+    div {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    @media only screen and (min-width: 760px) {
+        flex-flow: row;
+    
+        div:first-child {
+            width: 70%;
+        }
+        div:last-child {
+            width: 30%;
+        }
+    }
+}
+ 
+.center-align {
+    display: flex;
+    align-items: center;
+}
+.column {
+    display: flex;
+    flex-flow: column;
+}
+
+// Importing styles 
+@import "./artinfo";
+@import "./gallery";
+@import "./nav";
+@import "./footer";
+@import "./home";
+@import "./about";

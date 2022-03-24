@@ -1,0 +1,16 @@
+.footer {
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: solid 2px #eee;
+    padding: 1% 5%;
+    margin-top: 4rem;    
+
+    h1 {
+        color: #46C1A4;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
